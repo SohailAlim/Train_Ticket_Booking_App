@@ -6,7 +6,6 @@ import {
   onValue,
   remove,
   runTransaction
-  
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 import {
   getAuth,
@@ -18,8 +17,8 @@ import {
   sendEmailVerification
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 import { firebaseConfig } from './config.js';
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
+const app = initializeApp(firebaseConfig)
+const database = getDatabase(app)
 const auth = getAuth(app);
 const train_list_in_db = ref(database,"trainlist");
 const param = new URLSearchParams(window.location.search);
@@ -576,9 +575,10 @@ loginBtn.addEventListener('click', async () => {
     }
 });
 
+///////////////////////////////////////////////////////////////////////////////////
+
 googleBtn.addEventListener('click', async () => {
     const provider = new GoogleAuthProvider();
-
     try {
         const result = await signInWithPopup(auth, provider);
         const user = result.user;
