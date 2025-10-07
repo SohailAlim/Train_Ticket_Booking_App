@@ -1,0 +1,24 @@
+<div id="train-type">
+                <div id="train-type-header">
+                    <div><i class="fa-solid fa-couch"></i> JOURNEY CLASS</div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div id="train-type-options">
+                    <div class="train-type-option" id="Rajdhani">
+                        <div class="icon-text"><img src="assest/icons/Rajdhani_icon.png"></img>&nbsp Rajdhani (SL)</div>
+                        <div><input type="checkbox" id="Rajdhani-checkbox"></div>
+                    </div>
+                    <div class="train-type-option" id="Special">
+                        <div class="icon-text"><img src="assest/icons/3rd_ac_icon.png"></img>&nbsp AC 3 TIER (3A)</div>
+                        <div><input type="checkbox" id="Special-checkbox"></div>
+                    </div>
+                    <div class="train-type-option" id="Special-Tatkal">
+                        <div class="icon-text"><img src="assest/icons/2nd_ac_icon.png"></img>&nbsp AC 2 TIER (2A)</div>
+                        <div><input type="checkbox" id="Special-Tatkal-checkbox"></div>
+                    </div>
+                    <div class="train-type-option" id="Other">
+                        <div class="icon-text"><img src="assest/icons/1st_ac_icon.png"></img>&nbsp AC 1 TIER (1A)</div>
+                        <div><input type="checkbox" id="Other-checkbox"></div>
+                    </div>
+                </div>
+        </div>

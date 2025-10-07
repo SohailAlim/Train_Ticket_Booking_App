@@ -1,0 +1,578 @@
+{
+  "trainlist": {
+    "12301": {
+      "arrivalTime": "10:05",
+      "daysOfOperation": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "departureTime": "16:50",
+      "destination": "NDLS",
+      "seats": {
+        "ASN": {
+          "1A": 24,
+          "2A": 112,
+          "3A": 540
+        },
+        "CNB": {
+          "1A": 24,
+          "2A": 112,
+          "3A": 540
+        },
+        "DDU": {
+          "1A": 24,
+          "2A": 112,
+          "3A": 540
+        },
+        "DHN": {
+          "1A": 24,
+          "2A": 112,
+          "3A": 540
+        },
+        "GAYA": {
+          "1A": 24,
+          "2A": 112,
+          "3A": 540
+        },
+        "HWH": {
+          "1A": 24,
+          "2A": 112,
+          "3A": 540
+        },
+        "NDLS": {
+          "1A": 0,
+          "2A": 0,
+          "3A": 0
+        },
+        "PNME": {
+          "1A": 24,
+          "2A": 112,
+          "3A": 540
+        },
+        "PRYJ": {
+          "1A": 24,
+          "2A": 112,
+          "3A": 540
+        }
+      },
+      "source": "HWH",
+      "stations": {
+        "HWH": {
+          "order": 0,
+          "day": 0,
+          "arrival": "START",
+          "departure": "16:50"
+        },
+        "ASN": {
+          "order": 1,
+          "day": 0,
+          "arrival": "18:47",
+          "departure": "18:49"
+        },
+        "DHN": {
+          "order": 2,
+          "day": 0,
+          "arrival": "19:55",
+          "departure": "20:00"
+        },
+        "PNME": {
+          "order": 3,
+          "day": 0,
+          "arrival": "20:30",
+          "departure": "20:32"
+        },
+        "GAYA": {
+          "order": 4,
+          "day": 0,
+          "arrival": "22:32",
+          "departure": "22:35"
+        },
+        "DDU": {
+          "order": 5,
+          "day": 1,
+          "arrival": "00:40",
+          "departure": "00:50"
+        },
+        "PRYJ": {
+          "order": 6,
+          "day": 1,
+          "arrival": "02:43",
+          "departure": "02:45"
+        },
+        "CNB": {
+          "order": 7,
+          "day": 1,
+          "arrival": "04:50",
+          "departure": "04:55"
+        },
+        "NDLS": {
+          "order": 8,
+          "day": 1,
+          "arrival": "10:05",
+          "departure": "END"
+        }
+      },
+      "trainName": "Howrah - New Delhi Rajdhani Express (via Gaya)",
+      "trainNumber": "12301"
+    },
+    "12309": {
+      "arrivalTime": "07:40",
+      "daysOfOperation": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "departureTime": "19:10",
+      "destination": "NDLS",
+      "seats": {
+        "CNB": {
+          "1A": 18,
+          "2A": 230,
+          "3A": 768,
+          "SL": 30
+        },
+        "DDU": {
+          "1A": 18,
+          "2A": 230,
+          "3A": 768
+        },
+        "NDLS": {
+          "1A": 0,
+          "2A": 0,
+          "3A": 0
+        },
+        "PNBE": {
+          "1A": 18,
+          "2A": 230,
+          "3A": 768,
+          "SL": -34
+        },
+        "PRYJ": {
+          "1A": 18,
+          "2A": 230,
+          "3A": 768
+        },
+        "RJPB": {
+          "1A": 18,
+          "2A": 230,
+          "3A": 768
+        }
+      },
+      "source": "RJPB",
+      "stations": {
+        "RJPB": {
+          "order": 0,
+          "day": 0,
+          "arrival": "START",
+          "departure": "19:10"
+        },
+        "PNBE": {
+          "order": 1,
+          "day": 0,
+          "arrival": "19:25",
+          "departure": "19:35"
+        },
+        "DDU": {
+          "order": 2,
+          "day": 0,
+          "arrival": "22:10",
+          "departure": "22:20"
+        },
+        "PRYJ": {
+          "order": 3,
+          "day": 1,
+          "arrival": "00:10",
+          "departure": "00:12"
+        },
+        "CNB": {
+          "order": 4,
+          "day": 1,
+          "arrival": "02:15",
+          "departure": "02:20"
+        },
+        "NDLS": {
+          "order": 5,
+          "day": 1,
+          "arrival": "07:40",
+          "departure": "END"
+        }
+      },
+      "trainName": "Tejas Rajdhani Express",
+      "trainNumber": "12309"
+    },
+    "12381": {
+      "arrivalTime": "06:05",
+      "daysOfOperation": [
+        "Wed",
+        "Thu",
+        "Sun"
+      ],
+      "departureTime": "08:15",
+      "destination": "NDLS",
+      "seats": {
+        "ALJN": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "ASN": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "AUBR": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "BBU": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "BSB": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "BWN": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "CNB": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 647
+        },
+        "DDU": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "DGR": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "DHN": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "DOS": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "ETW": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "GAYA": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "HWH": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "JNH": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "KQR": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "NDLS": {
+          "1A": 0,
+          "2A": 0,
+          "3A": 0,
+          "SL": 0
+        },
+        "PNME": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "PRYJ": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "RFJ": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "SSM": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        },
+        "TDL": {
+          "1A": 10,
+          "2A": 120,
+          "3A": 320,
+          "SL": 648
+        }
+      },
+      "source": "HWH",
+      "stations": {
+        "HWH": {
+          "order": 0,
+          "day": 0,
+          "arrival": "START",
+          "departure": "08:15"
+        },
+        "BWN": {
+          "order": 1,
+          "day": 0,
+          "arrival": "09:07",
+          "departure": "09:10"
+        },
+        "ASN": {
+          "order":2,
+          "day": 0,
+          "arrival": "10:33",
+          "departure": "10:38"
+        },
+        "DGR": {
+          "order": 3,
+          "day": 0,
+          "arrival": "10:01",
+          "departure": "10:03"
+        },
+        "DHN": {
+          "order": 4,
+          "day": 0,
+          "arrival": "11:55",
+          "departure": "12:00"
+        },
+        "PNME": {
+          "order": 5,
+          "day": 0,
+          "arrival": "12:34",
+          "departure": "12:36"
+        },
+        "KQR": {
+          "order": 6,
+          "day": 0,
+          "arrival": "13:19",
+          "departure": "13:21"
+        },
+        "GAYA": {
+          "order": 7,
+          "day": 0,
+          "arrival": "14:40",
+          "departure": "14:45"
+        },
+        "RFJ": {
+          "order": 8,
+          "day": 0,
+          "arrival": "15:14",
+          "departure": "15:16"
+        },
+        "AUBR": {
+          "order": 9,
+          "day": 0,
+          "arrival": "15:36",
+          "departure": "15:38"
+        },
+        "DOS": {
+          "order": 10,
+          "day": 0,
+          "arrival": "15:52",
+          "departure": "15:54"
+        },
+        "BBU": {
+          "order": 11,
+          "day": 0,
+          "arrival": "16:36",
+          "departure": "16:38"
+        },
+        "SSM": {
+          "order": 12,
+          "day": 0,
+          "arrival": "16:08",
+          "departure": "16:10"
+        },
+        "DDU": {
+          "order": 13,
+          "day": 0,
+          "arrival": "17:45",
+          "departure": "17:55"
+        },
+        "BSB": {
+          "order": 14,
+          "day": 0,
+          "arrival": "18:45",
+          "departure": "18:55"
+        },
+        "JNH": {
+          "order": 15,
+          "day": 0,
+          "arrival": "19:58",
+          "departure": "20:00"
+        },
+        "PRYJ": {
+          "order": 16,
+          "day": 0,
+          "arrival": "21:35",
+          "departure": "21:40"
+        },
+        "CNB": {
+          "order": 17,
+          "day": 1,
+          "arrival": "00:02",
+          "departure": "00:07"
+        },
+        "ETW": {
+          "order": 18,
+          "day": 1,
+          "arrival": "01:29",
+          "departure": "01:31"
+        },
+        "TDL": {
+          "order": 19,
+          "day": 1,
+          "arrival": "02:48",
+          "departure": "02:50"
+        },
+        "ALJN": {
+          "order": 20,
+          "day": 1,
+          "arrival": "03:38",
+          "departure": "03:40"
+        },
+        "NDLS": {
+          "order": 21,
+          "day": 1,
+          "arrival": "06:05",
+          "departure": "END"
+        }
+      },
+      "trainName": "Poorva Express",
+      "trainNumber": "12381"
+    },
+    "20801": {
+      "arrivalTime": "12:00",
+      "daysOfOperation": [
+        "Mon",
+        "Tue",
+        "Wed",
+        null,
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "departureTime": "15:30",
+      "destination": "NDLS",
+      "seats": {
+        "CNB": {
+          "1A": 24,
+          "2A": 92,
+          "3A": 448,
+          "3E": 81,
+          "SL": 620
+        },
+        "DDU": {
+          "1A": 24,
+          "2A": 92,
+          "3A": 448,
+          "3E": 81,
+          "SL": 640
+        },
+        "IPR": {
+          "1A": 24,
+          "2A": 92,
+          "3A": 448,
+          "3E": 81,
+          "SL": 640
+        },
+        "NDLS": {
+          "1A": 0,
+          "2A": 0,
+          "3A": 0,
+          "3E": 0,
+          "SL": 0
+        },
+        "PNBE": {
+          "1A": 24,
+          "2A": 92,
+          "3A": 448,
+          "3E": 81,
+          "SL": 285
+        }
+      },
+      "source": "IPR",
+      "stations": {
+        "IPR": { "order": 0, "arrival": "START", "departure": "15:30", "day": 0 },
+        "EKR": { "order": 1, "arrival": "15:40", "departure": "15:41", "day": 0 },
+        "HIL": { "order": 2, "arrival": "15:52", "departure": "15:54", "day": 0 },
+        "DNWH": { "order": 3, "arrival": "16:15", "departure": "16:17", "day": 0 },
+        "FUT": { "order": 4, "arrival": "16:30", "departure": "16:32", "day": 0 },
+        "PNC": { "order": 5, "arrival": "16:48", "departure": "16:53", "day": 0 },
+        "RJPB": { "order": 6, "arrival": "17:01", "departure": "17:03", "day": 0 },
+        "PNBE": { "order": 7, "arrival": "17:20", "departure": "17:30", "day": 0 },
+        "PWS": { "order": 8, "arrival": "17:40", "departure": "17:42", "day": 0 },
+        "DNR": { "order": 9, "arrival": "17:48", "departure": "17:50", "day": 0 },
+        "BTA": { "order": 10, "arrival": "18:04", "departure": "18:06", "day": 0 },
+        "ARA": { "order": 11, "arrival": "18:24", "departure": "18:29", "day": 0 },
+        "BEA": { "order": 12, "arrival": "18:42", "departure": "18:44", "day": 0 },
+        "RPR": { "order": 13, "arrival": "18:55", "departure": "18:57", "day": 0 },
+        "DURE": { "order": 14, "arrival": "19:09", "departure": "19:11", "day": 0 },
+        "BXR": { "order": 15, "arrival": "19:26", "departure": "19:28", "day": 0 },
+        "GMR": { "order": 16, "arrival": "19:42", "departure": "19:44", "day": 0 },
+        "DLN": { "order": 17, "arrival": "19:56", "departure": "19:58", "day": 0 },
+        "ZNA": { "order": 18, "arrival": "20:10", "departure": "20:12", "day": 0 },
+        "DDU": { "order": 19, "arrival": "21:50", "departure": "22:00", "day": 0 },
+        "MZP": { "order": 20, "arrival": "23:05", "departure": "23:07", "day": 0 },
+        "BDL": { "order": 21, "arrival": "23:25", "departure": "23:27", "day": 0 },
+        "PRYJ": { "order": 22, "arrival": "01:15", "departure": "01:20", "day": 1 },
+        "CNB": { "order": 23, "arrival": "04:00", "departure": "04:05", "day": 1 },
+        "ETW": { "order": 24, "arrival": "05:43", "departure": "05:45", "day": 1 },
+        "FZD": { "order": 25, "arrival": "06:58", "departure": "07:00", "day": 1 },
+        "TDL": { "order": 26, "arrival": "07:48", "departure": "07:50", "day": 1 },
+        "ALJN": { "order": 27, "arrival": "09:05", "departure": "09:07", "day": 1 },
+        "NDLS": { "order": 28, "arrival": "12:00", "departure": "END", "day": 1 }
+      }
+      },
+      "trainName": "Magadh Express",
+      "trainNumber": "20801"
+    }
+  }

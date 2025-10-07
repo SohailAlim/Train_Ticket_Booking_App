@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assest/css/train_list.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.0/firebase-firestore.js"></script>
+</head>
+    <body>
+    <div id="container" style="background-color: #03037a;"></div>
+    <div id = "sidebar"></div>
+    <div id="searchbox"></div>
+        <div id="overlay"></div>
+    <div id="trains-list">
+        <div id="filters">
+            <div id="filter-header">
+                <div style="display: flex; align-items: center; "><i class="fa-solid fa-filter"></i> &nbsp<p style="font-weight: bold;">Filters</p></div>
+                <div id="clear-filters">Clear All</div>
+            </div>
+            <div id="journey-class">
+                <div id="journey-class-header">
+                    <div><i class="fa-solid fa-couch"></i>&nbsp JOURNEY CLASS</div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div id="journey-class-options">
+                    <div class="journey-class-option" id="sleeper">
+                        <div class="icon-text"><img src="assest/icons/sleeper_icon.png"></img>&nbsp Sleeper (SL)</div>
+                        <div><input type="checkbox" id="sleeper-checkbox"></div>
+                    </div>
+                    <div class="journey-class-option" id="third-ac">
+                        <div class="icon-text"><img src="assest/icons/3rd_ac_icon.png"></img>&nbsp AC 3 TIER (3A)</div>
+                        <div><input type="checkbox" id="third-ac-checkbox"></div>
+                    </div>
+                    <div class="journey-class-option" id="second-ac">
+                        <div class="icon-text"><img src="assest/icons/2nd_ac_icon.png"></img>&nbsp AC 2 TIER (2A)</div>
+                        <div><input type="checkbox" id="second-ac-checkbox"></div>
+                    </div>
+                    <div class="journey-class-option" id="first-ac">
+                        <div class="icon-text"><img src="assest/icons/1st_ac_icon.png"></img>&nbsp AC 1 TIER (1A)</div>
+                        <div><input type="checkbox" id="first-ac-checkbox"></div>
+                    </div>
+                </div>
+        </div>
+        <div id="train-type">
+                <div id="train-type-header">
+                    <div><i class="fa-solid fa-train"></i> Train Type</div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div id="train-type-options">
+                    <div class="train-type-option" id="Rajdhani">
+                        <div class="icon-text"><img src="assest/icons/Rajdhani_icon.png"></img>&nbsp Rajdhani</div>
+                        <div><input type="checkbox" id="Rajdhani-checkbox"></div>
+                    </div>
+                    <div class="train-type-option" id="Special">
+                        <div class="icon-text"><img src="assest/icons/3rd_ac_icon.png"></img>&nbsp Special</div>
+                        <div><input type="checkbox" id="Special-checkbox"></div>
+                    </div>
+                    <div class="train-type-option" id="Special-Tatkal">
+                        <div class="icon-text"><img src="assest/icons/2nd_ac_icon.png"></img>&nbsp Special Tatkal</div>
+                        <div><input type="checkbox" id="Special-Tatkal-checkbox"></div>
+                    </div>
+                    <div class="train-type-option" id="Other">
+                        <div class="icon-text"><img src="assest/icons/1st_ac_icon.png"></img>&nbsp Other</div>
+                        <div><input type="checkbox" id="Other-checkbox"></div>
+                    </div>
+                </div>
+        </div>
+        <div id="source_time_filter">
+            <div>Source Timing: &nbsp</div>
+            <div><input type="time" id="source_time" ></input> </div>
+        </div>
+        <div id="dst_time_filter">
+            <div>Destination Timing: &nbsp</div>
+            <div><input type="time" id="dst_time_filter_input" ></input> </div>
+        </div>
+        </div>
+                <div id="train_template" class="train" style="display: none;">
+            <div class="train_header">
+                <div class="header_part1">12301 - Rajdhani Express</div>
+                <div  class="Days">
+                        <span class="Mon">M</span>
+                        <span class="Tue">T</span>
+                        <span class="Wed">W</span>
+                        <span class="Thu">T</span>
+                        <span class="Fri">F</span>
+                        <span class="Sat">S</span>
+                        <span class="Sun">S</span>
+                    </div>
+                <div class="header_part2">
+                        Train Schedule
+                </div>
+            </div>
+            <div class="train_main_content">
+                <div class="timing">
+                    <div class="arv">
+                    <div class="arv_time">
+                        12:30  
+                    </div><div class="arv_separator">&nbsp| &nbsp</div>
+                    <div class="arv_stn">
+                        Patna Jn
+                    </div>
+                    <div class="arv_separator">&nbsp| &nbsp</div>
+                    <div class="arv_day_date">
+                        <div><span class="arv_day">Wed</span>, <span class="arv_date">20</span> <span class="arv_month">Aug</span></div>
+                    </div>
+                    </div>
+                    <div class="train_duration">
+                    <div class="Duration">
+                        12:10
+                    </div>
+                    <div class="int_stn" style="display: flex;">
+                        <span>&nbsp [</span><div class="int_stn_count">10</div><span>&nbspIntermediate Stations]</span>
+                    </div>
+                    </div>
+                    <div class="dst">
+                    <div class="dst_time">
+                        12:30
+                    </div><div >&nbsp| &nbsp</div>
+                    <div class="dst_stn">
+                    Patna Jn
+                    </div><div >&nbsp| &nbsp</div>
+                    <div class="dst_day_date">
+                        <div><span class="dst_day">Wed</span>, <span class="dst_date">20</span> <span class="dst_month">Aug</span></div>
+                    </div>
+                </div>
+            </div>
+        <div class="select_class">
+            <div class="class sleeper_class" id="sleeper_class">
+                <div class="class_name">Sleeper (SL)</div>
+                <div class="avl">AVAILABLE&nbsp-&nbsp<div  class="sl_no_of_seats">149</div></div>
+            </div>
+            <div class="class" id="third_ac_class">
+                <div class="class_name">AC 3 TIER (3A)</div>
+                <div class="wl">WL&nbsp-&nbsp<div class="third_ac_no_of_seats">10</div></div>
+            </div>
+            <div class="class" id="second_ac_class">
+                <div class="class_name">AC 2 TIER (2A)</div>
+                <div class="avl">AVAILABLE&nbsp-&nbsp<div class="second_ac_no_of_seats">1</div></div>
+            </div>
+            <div class="class" id="firs_ac_class">
+                <div class="class_name">AC 1 TIER (1A)</div>
+                <div class="wl">WL&nbsp-&nbsp<div class="first_ac_no_of_seats">6</div></div>
+            </div>
+        </div>
+        </div>
+    </div>
+        <div id="trains">
+
+        </div>
+    </div>
+    <div id="auth-container">
+        <input type="email" id="email" placeholder="Enter email">
+        <input type="password" id="password" placeholder="Enter password">
+        <button id="signup-btn">Sign Up</button>
+        <button id="login-btn">Login</button>
+        <button id="google-btn">Login with Google</button>
+        <div id="error-msg" style="color:red"></div>
+    </div>
+
+<script src="assest/js/train_list.js" type="module"></script>
+</body>
+</html>

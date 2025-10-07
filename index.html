@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Train Ticket - IRCTC</title>
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+        <div id="menu_items">
+        <div id="irctc_exclusive"><span>IRCTC i-PAY</span> </div>
+        <ul id="menu_links" >
+            <li><a href="index.html"><i class="fa-solid fa-ban"></i> Cancel Ticket</a></li>
+            <li class="dropdown_btn"><a><i class="fa-solid fa-train"></i> Trains <i class="fa-solid fa-caret-down"></i></a></li>
+            <div id="dropdown-container">
+                <li>Book Now</li>
+                <li>Foreign Tourist Booking</li>
+                <li>Connecting Journey Booking</li>
+                <li>Group Booking</li>
+                <li>Travel Insurance Claim Process</li>
+                <li>PNR Enquiry</li>
+                <li>Train Schedule</li>
+                <li>Track Your Train</li>
+                <li>FTR Coach/Train Booking</li>
+                <li>Pets Booking</li>
+            </div>
+            <li><a href="index.html"><i class="fa-solid fa-wallet"></i>Irctc e-wallet</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-bus"></i> Busses</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-plane"></i> Flights</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-umbrella-beach"></i> Holidays</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-utensils"></i> Meals</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-bullhorn"></i> Promotions</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-bell"></i> Alerts</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-bed"></i> Retiring room</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-ellipsis-h"></i> More</a></li>
+            </ul>
+        </div>
+    <div id="main_div">
+        <div id="overlay2">
+    <nav>
+        <div id="navbar">
+        <div style="display: flex; justify-items: center; align-items: center;"><span id="toggle_btn" style=" font-size: 30px; margin-left: 30px; margin-top: 2px;">&#9776;</span>
+        <div class="logo"><img src="images\IRCTC_LOGO.png"></div></div>
+        <div id="mininav" style="display: flex;">
+        <ul id="nav_links" >
+            <li><a href="index.html">Book Ticket</a></li>
+            <li><a href="index.html">Rail Madad</a></li>
+            <li><a href="index.html">PNR Status</a></li>
+            <li><a href="index.html">Running Status</a></li>
+            <li><a id="time_date" href="index.html"></a></li>
+        </ul>
+        </div>
+           <div style="margin-top:2px"><button id="log_in">Log in</button></div>
+        </div>
+    </nav>
+      <div id="overlay"></div>
+    <div id="main_content">
+        <div id="form_container" ><form autocomplete="off" id="station_form">
+            <div id="book_tkt">
+                <div id="book_tkt_text">
+                    BOOK TICKET</div>
+                <div id="tagline">Indian Railways: Safety | Security | Punctuality</div>
+                <div id="inputs">
+                    <div id="Source_box">
+                    <input id="Source" type="search" placeholder="Source">
+                    <div id="suggestions_for_src"></div></div>
+                    <button id="exchange"><i class="fa-solid fa-right-left"></i></button>
+                    <div id="dst_box">
+                    <input id="Destination" type="search" placeholder="Destination">
+                    <div id="suggestions_for_dst"></div></div>
+                    <input id="date" type="date" placeholder="Date">
+                    <select id="Quota" name="Quota" placeholder="Quota">
+                        <option value="General">General</option>
+                        <option value="Ladies">Ladies</option>
+                        <option value="Tatkal">Tatkal</option>
+                        <option value="Premium Tatkal">Premium Tatkal</option>
+                        <option value="Lower Berth/Sr. Citizen">Lower Berth/Sr. Citizen</option>
+                        <option value="Duty Pass">Duty Pass</option>
+                        <option value="Physically Handicapped">Physically Handicapped</option>
+                    </select>
+                <div id="buttons">
+                    <button id="search_button" type="submit">search</button>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div></div>
+    <script src="script.js"></script>
+</body>
+</html>
