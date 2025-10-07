@@ -17,6 +17,7 @@ import {
   sendEmailVerification
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 import { firebaseConfig } from './config.js';
+console.log("Firebase Config:", firebaseConfig);
 const app = initializeApp(firebaseConfig)
 const database = getDatabase(app)
 const auth = getAuth(app);
