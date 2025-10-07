@@ -1,21 +1,6 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-import {
-  getDatabase,
-  ref,
-  push,
-  onValue,
-  remove,
-  runTransaction
-} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-import {
-  getAuth,
-  RecaptchaVerifier,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  GoogleAuthProvider,
-  signInWithPopup,
-  sendEmailVerification
-} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+import { initializeApp } from 'firebase/app';
+import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { getDatabase, ref, onValue, runTransaction } from 'firebase/database';
 import { firebaseConfig } from './config.js';
 console.log("Firebase Config:", firebaseConfig);
 const app = initializeApp(firebaseConfig)
